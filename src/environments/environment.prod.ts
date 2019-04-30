@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  odefUrl: "https://odef-item-server.mybluemix.net/odef"
 };

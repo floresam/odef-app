@@ -1,0 +1,10 @@
+<div style="margin: 0 auto; max-width: 200px;">
+<h2>All Entries</h2>
+<ul class="odefs">
+    <li *ngFor="let odef of odefs">
+        <a routerLink="/detail/{{odef.type}}/{{odef.id}}">
+            <span class="badge">{{odef.type}}:{{odef.id}}</span>{{odef.name}}
+        </a>
+    </li>
+</ul>
+</div>

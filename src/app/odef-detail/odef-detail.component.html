@@ -1,0 +1,17 @@
+<div *ngIf="odef" style="text-align:center">
+  <h2>{{odef.name}} Details</h2>
+  <div>
+    ODEF ID: 
+        <span *ngIf="isProperty(odef.type)">_</span>{{odef.id}}
+  </div>
+  <div>
+    ODEF Name: {{odef.name}}
+  </div>
+  <div *ngIf="odef.nameNL">
+    ODEF Name (Dutch): {{odef.nameNL}}
+  </div>
+  <div *ngIf="odef.description">
+      Description: {{odef.description}}
+  </div>
+</div>
+
